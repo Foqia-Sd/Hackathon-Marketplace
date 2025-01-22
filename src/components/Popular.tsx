@@ -25,7 +25,7 @@ const Popular = async () => {
       <div className="container mx-auto">
         <h1 className="text-center text-3xl font-bold mb-4">Most Popular Products</h1>
         <p className="text-center mb-6 text-gray-500">
-          The World's Premium Brand In One Destination.
+          The World&apos;s Premium Brand In One Destination.
         </p>
 
         {/* Carousel Component */}

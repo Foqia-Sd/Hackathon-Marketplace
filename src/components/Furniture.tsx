@@ -4,7 +4,16 @@ import Image from 'next/image';
 import Link from 'next/link'; 
 import { CgEye } from 'react-icons/cg';
 
-const Furniture = ({ fur }: any) => {
+// Define an interface for the Furniture prop
+interface FurnitureProps {
+  fur: {
+    images: { url: string }[];
+    name: string;
+    product_id: string | number;
+  };
+}
+
+const Furniture = ({ fur }: FurnitureProps) => {
   return (
     <div className="group">
       <div className="border h-[328px] mb-5 py-4 overflow-hidden relative">
@@ -28,7 +37,6 @@ const Furniture = ({ fur }: any) => {
           </Link>
         </div>
       </div>
-      
     </div>
   );
 };
