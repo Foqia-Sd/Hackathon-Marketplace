@@ -11,7 +11,7 @@ import 'swiper/css/pagination';
 // Import required Swiper modules
 import { Pagination } from 'swiper/modules';
 
-const PopularCarousel = ({ furniture }: { furniture: any[] }) => {
+const PopularCarousel = ({ furniture }: any) => {
   return (
     <Swiper
       modules={[Pagination]}
@@ -23,8 +23,8 @@ const PopularCarousel = ({ furniture }: { furniture: any[] }) => {
         960: {slidesPerView: 3},
         1440: {slidesPerView: 4},
     }}
-      slidesPerView={1} // Adjust based on your design
-      loop={true} // Optional: Enables infinite scrolling
+      slidesPerView={1} 
+      loop={true} 
       className='popular-fur-slider mb-8 py-10'
     >
       {furniture.map((fur: any) => (
@@ -39,9 +39,3 @@ const PopularCarousel = ({ furniture }: { furniture: any[] }) => {
 export default PopularCarousel;
 
 
-// {/* Badge */}
-// {popular && (
-//   <div className="absolute top-8 left-8 bg-[#2A254B] text-white px-3 text-sm uppercase font-medium">
-//     Popular
-//   </div>
-// )}

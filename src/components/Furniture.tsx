@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link'; 
 import { CgEye } from 'react-icons/cg';
 
-const Furniture = ({ fur }: { fur: any }) => {
+const Furniture = ({ fur }: any) => {
   return (
     <div className="group">
       <div className="border h-[328px] mb-5 py-4 overflow-hidden relative">
